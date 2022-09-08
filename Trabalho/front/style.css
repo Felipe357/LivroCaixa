@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 25vh;
+    width: 100vw;
+}
+
+.titulo{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.titulo > span{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.filtroContainer{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.filtro{
+    display: flex;
+    justify-content: space-around;
+    width: 7%;
+    margin-right: 20px;
+}
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+button > img{
+    height: 25px;
+}
+
+.tabelas{
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.tabela1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+}
+
+.tabela1 > table{
+    width: 100%;
+}
+
+.tabela2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 49%;
+}
+
+.tabela2 > table{
+    width: 100%;
+}
+
+.tabela1 > span, .tabela2 > span{
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.saldo{
+    width: 100%;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.384);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campoCadastro{
+    height: 300px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cadTitulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.campoInfo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enviar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.model{
+    visibility: hidden;
+    display: none;
+}
