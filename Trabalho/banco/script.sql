@@ -10,7 +10,7 @@ create table lancamentos(
     tipo varchar(1) not null
 );
 
-LOAD DATA INFILE 'C:/Users/DESENVOLVIMENTO/Desktop/Trabalho/banco/lancamentos.csv'
+LOAD DATA INFILE 'C:/Users/felip/OneDrive/Documentos/lancamentos.csv'
 INTO TABLE lancamentos
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'

@@ -7,7 +7,7 @@ const conDB = mysql.createConnection({
 });
 
 function listarLancamentos(req, res) {
-    let query = "SELECT * FROM lancamentos";
+    let query = "SELECT * FROM lancamentos order by data DESC";
 
     conDB.query(query, (err, result) => {
         if(err == null) {

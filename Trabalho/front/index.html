@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Lojinha</title>
 </head>
-<body>
+<body onload="carregarTabela(), carregarDatas()">
 
     <div class="header">
         <div class="titulo">
@@ -16,8 +16,8 @@
         <div class="filtroContainer">
             <div class="filtro">
                 <span>Filtro: </span>
-                <select name="select">
-                    <option>Valor 1</option>
+                <select id="select" name="select" onchange="filtrarDatas(this.value)">
+                    <option>Todos</option>
                 </select>
             </div>
             <div class="cadastro">
@@ -41,7 +41,15 @@
                         <th>Tipo</th>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody id="tab-deb">
+                    <tr class="linhamodelo">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div class="tabela2"><span>Créditos</span>
@@ -55,13 +63,14 @@
                         <th>Tipo</th>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody id="tab-cre">
+                </tbody>
             </table>
         </div>
     </div>
 
     <div class="saldo">
-        <span>Saldo acumulado: R$ <span>121212</span></span>
+        <span>Saldo acumulado: R$ <span id="slado">121212</span></span>
     </div>
 
     <div class="modal model">

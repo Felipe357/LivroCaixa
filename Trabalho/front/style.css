@@ -69,6 +69,7 @@ button > img{
     height: 70vh;
     width: 100vw;
     justify-content: space-around;
+    padding: 30px;
 }
 
 .tabela1{
@@ -76,6 +77,9 @@ button > img{
     flex-direction: column;
     align-items: center;
     width: 48%;
+    max-height: 68vh;
+    overflow-y: scroll;
+    text-align: center;
 }
 
 .tabela1 > table{
@@ -87,6 +91,9 @@ button > img{
     flex-direction: column;
     align-items: center;
     width: 49%;
+    max-height: 68vh;
+    overflow-y: scroll;
+    text-align: center;
 }
 
 .tabela2 > table{
@@ -97,6 +104,8 @@ button > img{
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: bold;
+    position: absolute;
+    top: 230px;
 }
 
 .saldo{
