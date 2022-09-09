@@ -22,7 +22,7 @@
             </div>
             <div class="cadastro">
                 <span>Novo Lançamento</span>
-                <button><img src="./carrinho-de-compras.png" alt="Lançamento"></button>
+                <button onclick="showModal()"><img src="./carrinho-de-compras.png" alt="Lançamento"></button>
             </div>
         </div>
     </div>
@@ -77,25 +77,25 @@
         <div class="campoCadastro">
             <div class="cadTitulo">
                 <span>Criar um novo cadastro</span>
-                <button><img src="./close (1).png" alt=""></button>
+                <button onclick="showModal()"><img src="./close (1).png" alt=""></button>
             </div>
             <div class="campoInfo">
                 <span>Descrição:</span>
-                <input type="text" placeholder="Ex: alface">
+                <input id="desc" type="text" placeholder="Ex: alface">
             </div>
             <div class="campoInfo">
                 <span>Tipo:</span>
-                <select name="tipo">
-                    <option value="c">Entrada</option>
-                    <option value="d">Saída</option>
+                <select id="sel" name="tipo">
+                    <option value="C">Entrada</option>
+                    <option value="D">Saída</option>
                 </select>
             </div>
             <div class="campoInfo">
                 <span>Valor:</span>
-                <input type="number">
+                <input id="val" type="number">
             </div>
             <div class="enviar">
-                <button><img src="./put-in.png" alt=""></button>
+                <button onclick="cadastrar(), showModal()"><img src="./put-in.png" alt=""></button>
             </div>
         </div>
     </div>

@@ -113,3 +113,38 @@ function filtrarDatas(e) {
             document.querySelector("#slado").innerHTML = saldo
         })
 }
+
+function cadastrar(){
+    let desc = document.querySelector("#desc").value
+    let tipo = document.querySelector("#sel").value
+    let val = document.querySelector("#val").value
+
+    let dados = {
+        "descricao": desc,
+        "valor": val,
+        "tipo": tipo
+    }
+
+    fetch("http://localhost:3000/livrocaixa/lancamentos", {
+        "method":"Post",
+        "headers":{
+            "Content-Type":"application/json"
+        },
+        "body":JSON.stringify(dados)
+    })
+    .then(res => {return res.json()})
+    .then(resp => {
+        if(resp.descricao !== undefined){
+            alert("Produto Cadastrado com Sucesso !")
+            window.location.reload()
+        } else{
+            alert("Não foi possivél cadastrar o produto")
+        }
+    })
+}
+
+function showModal(){
+    let btn = document.querySelector(".modal")
+
+    btn.classList.toggle("model")
+}
